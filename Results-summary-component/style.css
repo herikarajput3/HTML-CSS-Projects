@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: var(--HankenGrotesk);
+}
+
+:root {
+    /* Colors */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+    /* Gradients Backgrounds */
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    /* Gradients Circle */
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+    /* Font */
+    --HankenGrotesk: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card1,
+.card2 {
+    width: 18vw;
+    height: 50vh;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 10%);;
+}
+
+.card1 {
+    background-image: linear-gradient(var(--LightSlateBlue), var(--LightRoyalBlue));
+}
+
+.your-result {
+    color: var(--LightLavender);
+    /* padding: 1em; */
+    /* margin: 1em; */
+}
+
+.gradient-circle {
+    height: 20vh;
+    width: 10vw;
+    background-color: black;
+    background: radial-gradient(var(--PersianBlue), var(--VioletBlue));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+}
+
+.result-value {
+    font-size: 3rem;
+    color: var(--White);
+    font-weight: 600;
+}
+
+.total-value {
+    font-size: 0.7em;
+    color: var(--LightLavender);
+}
+
+.greeting {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: 0.5em;
+}
+
+.instruction {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0 2.5em;
+    color: var(--LightLavender);
+}
+
+.card2 {
+    background-color: var(--White);
+}
+
+.summary {
+    text-align: left;
+    font-weight: 700;
+    align-self: flex-start;
+    padding: 1em;
+}
+
+.result {
+    width: 100%;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.result-heading {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.acheived-marks {
+    color: var(--DarkGrayBlue);
+    font-size: 0.8em;
+}
+
+strong {
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 0.8em;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: var(--LightRed);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: var(--OrangeYellow);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    color: var(--GreenTeal);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: var(--CobaltBlue);
+}
+
+img {
+    margin-right: 0.5em;
+}
+
+.continue{
+    width: 100%;
+    padding: 0.5em;
+    margin: 0 0.5em;
+    margin-bottom: 1.5em;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--DarkGrayBlue);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0%;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    font-size: 1em;
+    color: hsl(228, 45%, 44%);
+}
