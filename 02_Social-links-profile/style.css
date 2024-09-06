@@ -19,8 +19,8 @@
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
+    min-width: 100%;
+    min-height: 100vh;
     background-color: var(--Grey900);
     display: flex;
     justify-content: center;
@@ -30,21 +30,23 @@
 
 .card {
     width: 23vw;
-    height: 65vh;
+    height: auto;
     background-color: var(--Grey800);
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 10em; */
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Image design */
 
 .profile-image>img {
     width: 7vw;
+    /*for desktop */
+    max-width: 100px;
     border-radius: 50%;
-    /* margin: 1em 0; */
     padding: 0.5em;
 }
 
@@ -53,7 +55,7 @@
 .name {
     color: var(--White);
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.5rem;
 }
 
 /* Address */
@@ -61,7 +63,6 @@
 .address {
     color: var(--Green);
     font-weight: 600;
-    font-size: 0.8em;
     line-height: 250%;
 }
 
@@ -70,13 +71,18 @@
 .quotation {
     color: var(--White);
     font-weight: 400;
-    font-size: 0.8em;
     line-height: 350%;
+}
+
+.address,
+.quotation {
+    font-size: 0.8rem;
 }
 
 /* Buttons  */
 button {
-    width: 20vw;
+    width: clamp(150px, 20vw, 300px);
+    /* width: 20vw; */
     height: 5vh;
     background-color: var(--Grey700);
     border: none;
@@ -106,4 +112,50 @@ button:hover {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1440px) {
+    .card {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 40vw;
+    }
+
+    button {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 80vw;
+    }
+
+    button {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 90vw;
+        padding: 1em;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 80vw;
+    }
+
+    .profile-image>img {
+        width: 20vw;
+        max-width: 80px;
+    }
 }

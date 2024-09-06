@@ -46,6 +46,18 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 60%;
+    }
+}
+
 .image-section,
 img {
     max-width: 100%;
@@ -162,18 +174,6 @@ tr:last-child td {
 .values {
     color: hsl(14, 45%, 36%);
     font-weight: 600;
-}
-
-@media (min-width: 768px) {
-    .card {
-        width: 80%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .card {
-        width: 60%;
-    }
 }
 
 @media (max-width: 768px) {
