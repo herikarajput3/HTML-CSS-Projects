@@ -51,24 +51,6 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Tablet and above */
-@media (min-width: 768px) {
-    .card {
-        width: 50vw;
-        /* Takes up 50% of the viewport width on tablets */
-    }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-    .card {
-        width: 40vw;
-        /* Scales down for desktops */
-        max-width: 450px;
-        /* Restrict max width on large screens */
-    }
-}
-
 .perfume-mobile-img {
     width: 100%;
     height: auto;
@@ -110,7 +92,7 @@ html {
     text-align: left;
 }
 
-.product-pricing{
+.product-pricing {
     display: flex;
     align-items: baseline;
     gap: 1rem;
@@ -164,4 +146,22 @@ html {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+    .card {
+        width: 50vw;
+        /* Takes up 50% of the viewport width on tablets */
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .card {
+        width: 40vw;
+        /* Scales down for desktops */
+        max-width: 450px;
+        /* Restrict max width on large screens */
+    }
 }
