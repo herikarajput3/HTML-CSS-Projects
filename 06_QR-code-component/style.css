@@ -41,6 +41,39 @@ main {
     box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.1);
 }
 
+.card>img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.image-heading,
+.img-description {
+    text-align: center;
+    margin: 1rem;
+}
+
+.image-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--Slate900);
+}
+
+.img-description {
+    font-size: 0.7rem;
+    color: var(--Slate500);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
 @media (max-width:375px) {
     .card {
         width: 90vw;
@@ -83,37 +116,4 @@ main {
     .img-description {
         font-size: 0.9rem;
     }
-}
-
-.card>img {
-    width: 100%;
-    border-radius: 0.5rem;
-}
-
-.image-heading,
-.img-description {
-    text-align: center;
-    margin: 1rem;
-}
-
-.image-heading {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--Slate900);
-}
-
-.img-description {
-    font-size: 0.7rem;
-    color: var(--Slate500);
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    position: absolute;
-    bottom: 0%;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
