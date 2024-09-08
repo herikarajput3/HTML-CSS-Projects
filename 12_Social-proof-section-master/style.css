@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colors */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral Colors */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+html {
+    font-size: clamp(15px, 2vw, 24px);
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Header */
+
+header>h1 {
+    color: var(--very-dark-magenta);
+    padding: 1rem 0;
+}
+
+/* Description */
+
+.description {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+}
+
+/* Review Section */
+.comment-section {
+    margin: 2rem 0;
+}
+
+.star {
+    width: 0.7rem;
+}
+
+.ratings {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0;
+    color: var(--very-dark-magenta);
+}
+
+.section-1,
+.section-2,
+.section-3 {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin: 0.8rem 0;
+    background-color: var(--light-grayish-magenta);
+}
+
+/* Comment Section */
+.comment-section-1,
+.comment-section-2,
+.comment-section-3 {
+    background-color: var(--very-dark-magenta);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    margin: 0.8rem 0;
+    text-align: left;
+
+}
+
+.profile-img {
+    width: 2rem;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 0.7rem;
+    color: var(--white);
+    display: block;
+    font-weight: 500;
+}
+
+.verified {
+    font-size: 0.6rem;
+    color: var(--soft-pink);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.comments {
+    font-size: 0.6rem;
+    color: var(--light-grayish-magenta);
+    padding: 1rem 0;
+    line-height: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        padding: 3rem;
+        font-size: 22px;
+    }
+
+    /* Header */
+
+    .text-review-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .text-container {
+        width: 35vw;
+
+    }
+
+    /* Review Section */
+    .review {
+        width: 100%;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3 {
+        width: 60%;
+        position: absolute;
+
+    }
+
+    .review {
+        position: relative;
+        width: 100%;
+    }
+
+    .section-1 {
+        left: 6rem;
+        top: -4rem;
+    }
+
+    .section-2 {
+        left: 8rem;
+        top: -1rem;
+    }
+
+    .section-3 {
+        left: 10rem;
+        top: 2rem;
+    }
+
+
+    .ratings {
+        display: inline-block;
+    }
+
+    /* Comment Section */
+
+    .comment-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .comment-section-1,
+    .comment-section-2,
+    .comment-section-3 {
+        position: absolute;
+        width: 30%;
+    }
+
+    .comment-section-1 {
+        left: 0rem;
+        bottom: -11rem;
+
+    }
+
+    .comment-section-2 {
+        left: 15rem;
+        bottom: -12rem;
+    }
+
+    .comment-section-3 {
+        left: 30rem;
+        bottom: -13rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 26px;
+        margin: 1.5rem;
+    }
+
+    .text-container {
+        width: 25vw;
+    }
+
+    .comment-section-1,
+    .comment-section-2,
+    .comment-section-3 {
+        position: absolute;
+        width: 23%;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
